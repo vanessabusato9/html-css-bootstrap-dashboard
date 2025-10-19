@@ -19,10 +19,10 @@
     <header class="mb-4">
         <div class="bg-dark">
             <div class="row">
-                <div class="col-1">
+                <div class="col-3 col-lg-1">
                     <img class="w-img" src="./img/duck.png" alt="duck">
                 </div>
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-6 col-lg-6 d-flex align-items-center">
                     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-dark">
                         <a class="navbar-brand text-white d-none d-lg-table-cell" href="#">Catalogo libri</a>
 
@@ -42,7 +42,7 @@
                         </div>
                     </nav>
                 </div>
-                <div class="col-5 d-flex justify-content-end align-items-center">
+                <div class="col-3 col-lg-5 d-flex justify-content-end align-items-center">
                     <div class="pos-f-t d-table-cell d-lg-none">
                         <div class="collapse" id="navbarToggleExternalContent">
                             <div class="bg-dark p-4">
@@ -64,6 +64,88 @@
     </header>
 
     <body>
+        <!--Contenuto principale-->
+        <div class="container-fluid container-lg">
+            <div class="row mb-3">
+                <div class="col">
+                    <h1>Nuovo Libro</h1>
+                </div>
+            </div>
+            <form class="row mb-3">
+                <div class="col-6">
+                    <label for="nome-autore" class="form-label">Nome autore</label>
+                    <input type="text" id="nomeautore" class="form-control" placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="cognome-autore" class="form-label">Cognome autore</label>
+                    <input type="text" id="cognomeautore" class="form-control"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+            </form>
+            <form class="row mb-3">
+                <div class="col">
+                    <label for="titolo-del-libro" class="form-label">Titolo</label>
+                    <input type="text" id="titolo-del-libro" class="form-control"
+                        placeholder="Inserisci il titolo del libro">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Titolo versione italiana
+                    </div>
+                </div>
+            </form>
+            <form class="row mb-3">
+                <div class="col-12 col-lg-4 mb-3">
+                    <label for="titolo-del-libro" class="form-label">Genere</label>
+                    <select class="form-select" aria-label="Default select type">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Romantico</option>
+                        <option value="2">Avventura</option>
+                        <option value="3">Drammatico</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <label for="anno-di-pubblicazione" class="form-label">Anno di pubblicazione</label>
+                    <input type="number" id="quantity" class="form-control" placeholder="Inserisci l'anno" min="1000"
+                        max="2025">
+                </div>
+                <div class="col-12 col-lg-4 mb-3">
+                    <label for="ISBN" class="form-label">ISBN#</label>
+                    <input type="number" id="quantity" class="form-control" placeholder="Inserisci il codice ISBN#">           
+                </div>
+            </form>
+
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="border-top border-secondary" style="height: 1px;"></div>
+                </div>
+            </div>
+
+            <form class="row mb-3">
+                <div class="col">
+                    <label for="Note" class="form-label">Note</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+            </form>
+
+            <form class="row mb-3">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                        <label class="form-check-label" for="inlineFormCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+            </form>
+
+            <form class="row mb-3">
+                <div class="col">
+                    <button type="submit" class="btn btn-primary">Aggiungi Libro</button>
+                </div>
+            </form>
+        </div>
+
+
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
