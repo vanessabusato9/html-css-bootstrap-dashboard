@@ -1,5 +1,7 @@
 .w-img {
     width: 100%;
+    max-width: 80px;
+    height: auto;
     margin: 10px;
 }
 
